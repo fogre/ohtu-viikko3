@@ -18,13 +18,17 @@
     <bean id="inMemoryUserDao" class="ohtu.data_access.InMemoryUserDao">
     </bean>
     
+    <bean id="FileUserDao" class="ohtu.data_access.FileUserDAO">
+           <constructor-arg type="java.lang.String" value="src/secret.txt" />
+    </bean>
+    
    <bean id="authenticationService" class="ohtu.services.AuthenticationService">
-        <constructor-arg ref="inMemoryUserDao"/>
+        <constructor-arg ref="FileUserDao"/>
     </bean>
     
     <bean id="App" class="ohtu.App">
         <constructor-arg ref="consoleIO"/>
-                <constructor-arg ref="authenticationService"/>
+        <constructor-arg ref="authenticationService"/>
     </bean>
     
 </beans>
