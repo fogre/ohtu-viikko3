@@ -1,5 +1,7 @@
 *.class
 
+/viikko4/TyhjaProjekti/target/
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
