@@ -1,7 +1,12 @@
 *.class
+.classpath
+.project
+.settings/
+.springBeans
 
 /viikko4/TyhjaProjekti/target/
 /viikko4/LoginWeb2/target/
+*/target/*
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
